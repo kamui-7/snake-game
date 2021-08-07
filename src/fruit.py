@@ -3,7 +3,6 @@ from . import constants
 
 speed = constants.speed
 
-
 class Fruit():
 
     def __init__(self, x, y):

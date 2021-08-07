@@ -4,13 +4,10 @@ from . import constants
 
 speed = constants.speed
 
-
 @dataclass
 class Coor():
-
     x: int
     y: int
-
 
 class Snake():
 
@@ -55,7 +52,6 @@ class Snake():
         self.dy = speed
 
     def gameOver(self):
-
         for cell in self.body:
             if cell.x > constants.width - constants.size or cell.x < 0 or \
                     cell.y > constants.height - constants.size or cell.y < 0:
